@@ -131,7 +131,7 @@ if(isset($_POST['register'])){
 
   
         <div class="row-lg-12">
-            <div class="col-lg-4 col-lg-offset-1" id="picture">
+            <div class="col-lg-4 col-lg-offset-1 col-md-2 col-sm-2" id="picture">
                 <img src="linklnPicture.png" class="img-circle">
             </div>
             <div class="col-lg-7" id="bio">
