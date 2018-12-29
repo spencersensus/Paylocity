@@ -147,13 +147,13 @@ if(isset($_POST['register'])){
                     connect further. </br>
                     Thank you!
                 </p>
-                <div class="col-lg-2 col-lg-offset-1" id="bio">
+                <div class="col-lg-2 col-lg-offset-1 col-md-1 col-sm-1" id="bio">
                    <a href = "https://www.linkedin.com/in/spencer-woods-077978138"> <img src="linkdln.png" id="icons"> </a>
                 </div>
-                <div class="col-lg-2 col-lg-offset-1" id="bio">
+                <div class="col-lg-2 col-lg-offset-1 col-md-1 col-sm-1" id="bio">
                     <a href = "Resume-Spencer Woods.doc.pdf" ><img src="folder.png" id="icons"></a>
                 </div>
-                <div class="col-lg-2 col-lg-offset-1" id="bio">
+                <div class="col-lg-2 col-lg-offset-1 col-md-1 col-sm-1" id="bio">
                     <a href = "https://www.facebook.com/spencer.j.woods.1"><img src="facebook.png" id="icons"> </a>
                 </div>
             </div>
