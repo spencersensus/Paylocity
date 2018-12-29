@@ -162,7 +162,7 @@ if(isset($_POST['register'])){
     <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#home">Skills</a></li>
         <li><a data-toggle="tab" href="#skillTab">Experience</a></li>
-        <li><a data-toggle="tab" href="#porfolioTab">Porfolio</a></li>
+        <li><a data-toggle="tab" href="#porfolioTab">Portfolio</a></li>
         <li><a data-toggle="tab" href="#contactTab">Contact</a></li>
     </ul>
     <div class="tab-content col-lg-12">
@@ -185,7 +185,7 @@ if(isset($_POST['register'])){
                     structures classes in and the language in which I
                     learned how to write different sorting algorithms, binary tree structeres, hash tables, and so on.
                     So although I do not have any professional experience
-                    in this language I have used it extensively in a educational enviroment. If you look in my porfolio
+                    in this language I have used it extensively in a educational enviroment. If you look in my portfolio
                     section you will see a few examples of my work in Java. If i had to
                     reccomend one it would be the binary search tree project as it brought together a lot of topics
                     that I had learned and put them into one project.
@@ -196,7 +196,7 @@ if(isset($_POST['register'])){
                     finally format the information recieved from mySql onto a webpage. It is a fairly simple language
                     to learn and I believe I have a firm grasp on how to write a solid program in PhP.
                     All of that being said I have a lot to learn and I know I can improve given time on this language.
-                    You can see some examples of this on this website and my other websites in the porfolio section.
+                    You can see some examples of this on this website and my other websites in the portfolio section.
                 </p>
                 <h3>Sql</h3>
                 <p>Similar to PhP I have used Sql to aid in my website creation. This involved creating a database and
@@ -213,11 +213,11 @@ if(isset($_POST['register'])){
                     different designs and layouts.My internship with Garrigan Lyman Group is what really sparked my
                     passion for web development. To see my work in this language see this website and others that I
                     will
-                    link to in my porfolio.
+                    link to in my portfolio.
                     <h3>C</h3>
                     <p> I have written a good amount of C In an educational enviroment, as Boise State's secondary
                         language they teach after Java is
-                        C. You will see some good examples of my work in C in my porfolio section. C is never really my
+                        C. You will see some good examples of my work in C in my portfolio section. C is never really my
                         default go-to language but I reconize the
                         power and speeds that can be achieved in C so it is a neccesity at times.
                     </p>
@@ -340,7 +340,7 @@ if(isset($_POST['register'])){
         </div>
         <div id="porfolioTab" class="tab-pane fade">
         <div class="col-lg-6">
-            <h1>Porfolio</h1>
+            <h1>portfolio</h1>
             <h3>Java</h3>
             <h4>Binary Search Tree</h4>
             <a href = "https://github.com/spencersensus/Cs453/tree/master/java%20examples/src">Binary Search Tree</a>
