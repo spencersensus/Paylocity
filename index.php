@@ -67,11 +67,11 @@ if(isset($_POST['login']))
     $e = $row["userName"];
     $p = $row["pass"];
     if($user == $e && $pass == $p && $_SESSION != "1"){
-        alert("Logged in succesfully");
+      
         $_SESSION['login'] = "1";
     }
     else{
-        alert("Credentials did not match any in our system.");
+        
         $_SESSION['login'] = "";
     }
 }
