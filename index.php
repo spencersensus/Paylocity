@@ -39,7 +39,7 @@ class test{
 
 
     public function login($user,$pass){
-        $servername = "us-cdbr-iron-east-01.cleardb.net";
+    $servername = "us-cdbr-iron-east-01.cleardb.net";
     $username = "b3c9fea6937492";
     $password = "fd9d1b2a";
     $dbname = "heroku_e93bbdae1c33363";
@@ -67,11 +67,11 @@ if(isset($_POST['login']))
     $e = $row["userName"];
     $p = $row["pass"];
     if($user == $e && $pass == $p && $_SESSION != "1"){
-        echo "Logged in succesfully";
+        alert("Logged in succesfully");
         $_SESSION['login'] = "1";
     }
     else{
-        echo "Credentials did not match any in our system.";
+        alert("Credentials did not match any in our system.");
         $_SESSION['login'] = "";
     }
 }
