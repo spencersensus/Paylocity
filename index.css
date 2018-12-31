@@ -46,6 +46,9 @@ img{
 .nameLink{
   display:none;
 }
+.logoutLink{
+  display:none;
+}
 
 /* login form */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
