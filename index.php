@@ -135,10 +135,6 @@ if(isset($_POST['register'])){
           <script>
 var log = '<?=$_SESSION['login'];?>';
 var user = '<?=$_SESSION['user'];?>';
-$(".logoutLink").click(function() {
-    console.log("HERE");
-    location.href = "/Logout.php";
-})
 if(log == "1"){
     console.log("login is 1");
     console.log("user is", user);
