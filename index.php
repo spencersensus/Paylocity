@@ -137,7 +137,7 @@ var log = '<?=$_SESSION['login'];?>';
 var user = '<?=$_SESSION['user'];?>';
 $(".logoutLink").click(function() {
     console.log("HERE");
-    session_destroy();
+    location.href = "/Logout.php";
 })
 if(log == "1"){
     console.log("login is 1");
