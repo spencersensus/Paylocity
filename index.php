@@ -83,9 +83,18 @@ if(isset($_POST['register'])){
     $y -> signUp($user,$pass,$email);
     password_hash($pass,PASSWORD_BCRYPT);
 }
+
+
 ?>
-
-
+<script>
+var log = '<?=$_SESSION['login'];?>';
+if(log == "1"){
+    console.log("login is 1");
+}
+else{
+    console.log("login is 0");
+}
+</script>
 
 <body>
     <div class="container-fluid" id="bioContainer">
