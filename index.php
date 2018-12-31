@@ -90,8 +90,12 @@ if(isset($_POST['register'])){
 var log = '<?=$_SESSION['login'];?>';
 if(log == "1"){
     console.log("login is 1");
+    $("#loginLink").hide();
+    $("#nameLink").show();
 }
 else{
+    $("#loginLink").show();
+    $("#nameLink").hide();
     console.log("login is 0");
 }
 </script>
@@ -99,7 +103,8 @@ else{
 <body>
     <div class="container-fluid" id="bioContainer">
     <div class = "headerRow">
-        <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+        <a href="#" data-toggle="modal" id = "loginLink" data-target="#login-modal">Login</a>
+        <a href="#" id = "nameLink">Name</a>
     </div>
 
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">

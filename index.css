@@ -40,8 +40,12 @@ img{
 .headerRow{
     float:right;
 }
-
-
+#loginLink{
+  display:block;
+}
+#nameLink{
+  display:none;
+}
 
 /* login form */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
