@@ -91,11 +91,11 @@ var log = '<?=$_SESSION['login'];?>';
 if(log == "1"){
     console.log("login is 1");
     $("#loginLink").hide();
-    $("#nameLink").show();
+    $(".nameLink").show();
 }
 else{
     $("#loginLink").show();
-    $("#nameLink").hide();
+    $(".nameLink").hide();
     console.log("login is 0");
 }
 </script>
