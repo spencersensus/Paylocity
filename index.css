@@ -41,9 +41,9 @@ img{
     float:right;
 }
 #loginLink{
-  display:block;
+  display:none;
 }
-#nameLink{
+.nameLink{
   display:none;
 }
 
