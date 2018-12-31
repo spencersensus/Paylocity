@@ -139,6 +139,7 @@ if(log == "1"){
     console.log("login is 1");
     console.log("user is", user);
     $("#loginLink").hide();
+    $(".nameLink").html(user);
     $(".nameLink").show();
     $(".logoutLink").show();
 }
