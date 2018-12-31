@@ -86,19 +86,7 @@ if(isset($_POST['register'])){
 
 
 ?>
-<script>
-var log = '<?=$_SESSION['login'];?>';
-if(log == "1"){
-    console.log("login is 1");
-    $("#loginLink").hide();
-    $(".nameLink").show();
-}
-else{
-    $("#loginLink").show();
-    $(".nameLink").hide();
-    console.log("login is 0");
-}
-</script>
+
 
 <body>
     <div class="container-fluid" id="bioContainer">
@@ -142,7 +130,19 @@ else{
 				</div>
 			</div>
 		  </div>
-
+          <script>
+var log = '<?=$_SESSION['login'];?>';
+if(log == "1"){
+    console.log("login is 1");
+    $("#loginLink").hide();
+    $(".nameLink").show();
+}
+else{
+    $("#loginLink").show();
+    $(".nameLink").hide();
+    console.log("login is 0");
+}
+</script>
   
         <div class="row-lg-12">
             <div class="col-lg-4 col-lg-offset-1 col-md-2 col-sm-2" id="picture">
