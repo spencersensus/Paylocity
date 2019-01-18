@@ -25,7 +25,7 @@ require "insert.php";
         <div class="container-fluid" id="bioContainer">
             <!--links to home and account -->
             <div class="headerRow">
-                <a href="Account.php" class="nameLink">Name</a>
+                <a href="Account.php" class="nameLink">Account</a>
                 <a href="index.php" class="homeLink">Home</a>
             </div>
             <div class="row-lg-12">
@@ -330,6 +330,7 @@ require "insert.php";
         var user = '<?=$_SESSION['user'];?>';
         $(document).ready(function () {
             console.log("HERE", ImageURL + data);
+            
             $("#profilePicture").attr('src', ImageURL + data);
             $("#picture").attr('src', ImageURL + data);
             $(".nameLink").html(user);

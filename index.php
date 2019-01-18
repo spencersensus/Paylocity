@@ -424,6 +424,7 @@ if(isset($_POST['register'])){
     <script>
         //This code sees whether or not the user is logged in or not, and then either shows or hides elements.
         var log = '<?=$_SESSION['login'];?>';
+        var id = '<?=$_SESSION['id'];?>';
         var user = '<?=$_SESSION['user'];?>';
         var personalized = '<?=$_SESSION['personalized'];?>';
         console.log("pers",personalized)
