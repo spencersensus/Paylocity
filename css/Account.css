@@ -1,0 +1,70 @@
+/* main style sheet for the Account.php page. */
+
+body{
+    background-color: #313351;
+    font-family:serif;
+}
+#bioContainer{
+    padding-top:0px;
+    height:1000px;
+}
+.headerRow{
+    float:right;
+    height:50px;
+}
+
+.innerContainer{
+    background-color:white;
+    
+}
+a{
+    text-decoration:none;
+    color:black;
+    
+}
+a.logoutLink{
+    float:right;
+    margin-right:10px;
+}
+a.nameLink{
+    float:right;
+}
+ #profilePicture{
+    width:100%;
+}
+.profilePicture{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.row{
+    border-bottom:solid;
+    border-width: 2px;
+    height:30%;
+}
+#accountPageTitles{
+    font-size:25px;
+}
+#changeProfileInfo{
+    display:none;
+}
+
+#changeBilling{
+    display:none;
+}
+#changeCustomizationInfo{
+    display:none;
+}
+
+.comments{
+    height:20px;
+    text-overflow: ellipsis;
+    overflow :hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.creationPage{
+    padding-top:30px;
+}
+.nameTitle{
+    padding-bottom:70px;
+}

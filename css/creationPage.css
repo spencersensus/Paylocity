@@ -1,0 +1,66 @@
+body{
+    background-color: #313351;
+}
+#bioContainer2{
+    padding-top:0px;
+    height:1000px;
+}
+.innerContainer{
+    background-color:white;
+}
+#aboutForm{
+    border-bottom:solid;
+    border-width: 2px;
+    height:30%;
+}
+#porfolioForm{
+    border-bottom:solid;
+    border-width: 2px;
+    height:30%;
+}
+#skillForm{
+    border-bottom:solid;
+    border-width: 2px;
+    height:30%;
+}
+#companyForm{
+    border-bottom:solid;
+    border-width: 2px;
+    height:30%;
+}
+#referenceForm{
+    border-bottom:solid;
+    border-width: 2px;
+    height:30%;
+    padding-bottom:20px;
+}
+#aboutForm{
+    display:block;
+    padding-bottom:20px;
+}
+
+#skillForm{
+    display:none;
+    padding-bottom:20px;
+}
+#companyForm{
+    display:none;
+    padding-bottom:20px;
+}
+#referenceForm{
+    display:none;
+    padding-bottom:20px;
+}
+#porfolioForm{
+    display:none;
+    padding-bottom:20px;
+}
+iframe{
+    display: none;
+  }
+.createTitle{
+    text-align:center;
+}
+.subButton{
+text-align:center;
+}
