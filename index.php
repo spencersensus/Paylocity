@@ -25,7 +25,6 @@ if(isset($_POST['login']))
     $row = $result->fetch_assoc();
     $e = $row["userName"];
     $p = $row["pass"];
-    $id = $row["id"];
     $url = 'https://d3q6qq2zt8nhwv.cloudfront.net/m/1_extra_dq1a4r2g.jpg';
     if($user == $e && $pass == $p && $_SESSION != "1"){
       

@@ -92,7 +92,10 @@ if(isset($_POST['updateCustomization'])){
                     </div>
                     <!-- name -->
                     <div class="profileInfo col-lg-6 col-lg-offset-2">
-                        <h1 class="nameTitle">Spencer Woods </h1>
+                        <h1 class="nameTitle"><?php    
+                                
+                                printProfileInfo('userName');
+                                ?></h1>
                         <?php  
                         $result = retrievePersonalizedInfo('personalized'); 
                         foreach($result as $pers){
