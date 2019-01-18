@@ -34,7 +34,7 @@ for your local machine to load the php files instead of downloading them.
 
 RUNNING ON YOUR LOCAL MACHINE:
 Directions to get running using MAMP:
-1. Download MAMP form their official website.
+1. Download MAMP from their official website.
 2. Open terminal and make your way to Applications/Mamp/htdocs/ 
 3. run: git init
         git clone "path given on github website"
