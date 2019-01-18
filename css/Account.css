@@ -6,7 +6,7 @@ body{
 }
 #bioContainer{
     padding-top:0px;
-    height:1150px;
+    height:100%;
 }
 .headerRow{
     float:right;
@@ -19,7 +19,7 @@ body{
 }
 a{
     text-decoration:none;
-    color:black;
+    color:white;
     
 }
 a.logoutLink{

@@ -23,7 +23,6 @@ else{
     if($conn->query($sql) === TRUE){
     }
     else{
-        echo "NOT A VALID QUERY";
     }
     $setForeign2 = "SET FOREIGN_KEY_CHECKS=1";
     if($conn->query($setForeign2) === TRUE){
@@ -49,8 +48,6 @@ else{
     if($conn->query($sql) === TRUE){
     }
     else{
-        echo $sql;
-        echo "NOT A VALID QUERY Person";
     }
     }
 }
@@ -73,7 +70,6 @@ else{
     if($conn->query($sql) === TRUE){
     }
     else{
-        echo "NOT A VALID QUERY";
     }
     }
 }
@@ -97,8 +93,6 @@ else{
 
     }
     else{
-        echo $sql;
-        echo "NOT A VALID QUERY";
     }
     }
 }
@@ -123,7 +117,6 @@ else{
     if($conn->query($sql) === TRUE){
     }
     else{
-        echo "NOT A VALID QUERY";
     }
     }
 }
@@ -147,7 +140,6 @@ else{
       
     }
     else{
-        echo "NOT A VALID QUERY Skill";
     }
     }
 }
@@ -171,8 +163,6 @@ else{
        
     }
     else{
-        echo $sql;
-        echo "NOT A VALID QUERY Pers";
     }
     }
 }
@@ -196,8 +186,6 @@ else{
       
     }
     else{
-        echo $sql;
-        echo "NOT A VALID QUERY WorkHistory";
     }
     }
 }
@@ -221,8 +209,6 @@ else{
        
     }
     else{
-        echo $sql;
-        echo "NOT A VALID QUERY Reference";
     }
     }
 }
@@ -246,7 +232,6 @@ else{
         
     }
     else{
-        echo "NOT A VALID QUERY Porf";
     }
     }
 }
