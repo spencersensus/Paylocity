@@ -42,3 +42,4 @@ Directions to get running using MAMP:
 4. your localhost should now redirect you to the index.php page.
 
 P.S(WAMP should be almost identical, but their might be a couple small alterations in the steps)
+

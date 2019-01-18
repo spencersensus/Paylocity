@@ -40,6 +40,9 @@ if(isset($_POST['updateProfile'])){
     insertProfileInfo($user,$pass,$email,$state,$zip,$city,$address,$oldUser,$phone,$name);
     password_hash($pass,PASSWORD_BCRYPT);
 }
+if(empty($_SESSION['backgroundColor'])){
+    $_SESSION['backgroundColor'] = "#313351";
+}
 
 //if the user updates their billing info then this piece of code will be activated
 //This code will get the form data submitted and insert the information into the db along with a history log
@@ -525,6 +528,7 @@ form is active. -->
         //whenever the documents is loaded this function will be called setting the custom details for the users account page
         $(document).ready(function () {
             $("#profilePicture").attr('src', 'getImage.php?id=1');
+            console.log("color ",backgroundColor);
             $("#bioContainer").css('background-color', backgroundColor);
             $("body").css('font-family', font);
         });

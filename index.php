@@ -13,6 +13,7 @@
 <?php
 session_start();
 require "regLog.php";
+require "retrieve.php";
 // if the user submits a login this piece of code gets called. This will catch the form data and submit them to the login
 //function in regLog.php. If the information provided checks out then the session variables 'login','user' and 'id' gets set.
 //if the information is false then the usre will not get logged in. This also will add default data into the db.
@@ -48,6 +49,7 @@ if(isset($_POST['register'])){
 }
 
 
+
 ?>
 
 
@@ -58,6 +60,16 @@ if(isset($_POST['register'])){
             <div class="headerRow">
                 <a href="#" data-toggle="modal" id="loginLink" data-target="#login-modal">Login</a>
                 <a href="Account.php" class="nameLink">Name</a>
+                <a href="creationPage.php" class="createResume">createResume</a>
+                <?php  
+                        $result = retrievePersonalizedInfo('personalized'); 
+                        foreach($result as $pers){
+                            if($pers['personalized'] == "1"){
+                                echo '<a href = personalized.php >myResume</a>';
+                                $_SESSION['personalized'] == "1";
+                            }
+                        }
+                ?>
                 <a href="#" class="logoutLink">Logout</a>
             </div>
             <!-- login form -->
@@ -316,7 +328,7 @@ if(isset($_POST['register'])){
             <!-- porfolio tab -->
             <div id="porfolioTab" class="tab-pane fade">
                 <div class="col-lg-6">
-                    <h1>portfolio</h1>
+                    <h1>Portfolio</h1>
                     <h3>Java</h3>
                     <h4>Binary Search Tree</h4>
                     <a href="https://github.com/spencersensus/Cs453/tree/master/java%20examples/src">Binary Search Tree</a>
@@ -413,10 +425,19 @@ if(isset($_POST['register'])){
         //This code sees whether or not the user is logged in or not, and then either shows or hides elements.
         var log = '<?=$_SESSION['login'];?>';
         var user = '<?=$_SESSION['user'];?>';
+        var personalized = '<?=$_SESSION['personalized'];?>';
+        console.log("pers",personalized)
         $(".logoutLink").click(function () {
-            console.log("HERE");
             location.href = "/Logout.php";
         })
+        if (personalized == "1") {
+            $(".createResume").hide();
+        }
+        else {
+            if (log == "1") {
+                $(".createResume").show();
+            }
+        }
         if (log == "1") {
             console.log("login is 1");
             console.log("user is", user);
@@ -429,7 +450,6 @@ if(isset($_POST['register'])){
             $("#loginLink").show();
             $(".nameLink").hide();
             $(".logoutLink").hide();
-            console.log("login is 0");
         }
     </script>
 

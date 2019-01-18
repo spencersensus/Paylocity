@@ -10,6 +10,9 @@ body{
     color:black;
 }
 
+h1{
+  color:#4973b7;
+}
 .container{
     padding:0;
     background-color:lightslategray;
@@ -44,10 +47,8 @@ img{
   display:block;
 }
 .nameLink{
-  display:none;
 }
 .logoutLink{
-  display:none;
 }
 
 /* login form */

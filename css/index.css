@@ -12,6 +12,9 @@ h1{
 .nav li a{
     color:black;
 }
+.createResume{
+  display:none;
+}
 
 .container{
     padding:0;

@@ -35,7 +35,7 @@ require "insert.php";
                 <!-- name and bio -->
                 <div class="col-lg-7" id="bio">
                     <h1 class="name">
-                        <?php printAboutInfo('name'); ?>
+                        <?php printAboutInfo('name'); ?> 
                     </h1>
                     <p>Hi There!</br>
                         <?php printAboutInfo('bio'); ?>
@@ -327,10 +327,12 @@ require "insert.php";
     <script>
         var ImageURL = 'retrieveImage.php?';
         var data = 'id=' + id;
+        var user = '<?=$_SESSION['user'];?>';
         $(document).ready(function () {
             console.log("HERE", ImageURL + data);
             $("#profilePicture").attr('src', ImageURL + data);
             $("#picture").attr('src', ImageURL + data);
+            $(".nameLink").html(user);
         });
     </script>
 
