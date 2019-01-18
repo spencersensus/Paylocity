@@ -7,7 +7,10 @@ body{
     height:1000px;
 }
 .innerContainer{
-    background-color:white;
+    background-color:#F8F8FF;
+}
+h2{
+    color:#4973b7;
 }
 #aboutForm{
     border-bottom:solid;
